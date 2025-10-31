@@ -20,17 +20,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # 2. Menjalankan Aksi "readme-tetris"
-      # Ini adalah "mesin" yang memainkan game dan membuat animasi
+      # 2. Menjalankan Aksi "readme-tetris" (VERSI YANG SUDAH DIPERBAIKI)
       - name: Generate Tetris Animation
-        uses: vchime/readme-tetris@master
+        # Menggunakan fork yang aktif dan terawat
+        uses: Dion-g/readme-tetris@main
         with:
           # Path + nama file untuk menyimpan animasi SVG
-          # Kita akan menyimpannya di folder 'assets'
           output: 'assets/tetris-animated.svg'
           
           # (Opsional) Teks yang muncul saat game over
           # game_over_text: 'GAME OVER'
-          
-          # (Opsional) Jika Anda ingin mode 'dark'
-          # theme: 'dark'
