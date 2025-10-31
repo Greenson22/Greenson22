@@ -16,19 +16,34 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. Check out kode repositori Anda
+      # Langkah 1: Checkout repositori Anda
+      # Ini agar workflow bisa "melihat" file Anda
       - name: Checkout
         uses: actions/checkout@v3
 
-      # 2. Menjalankan Aksi "readme-tetris" (VERSI YANG SUDAH DIPERBAIKI)
+      # Langkah 2: Buat Animasi Tetris
+      # PERBAIKAN: Menggunakan "Dion-g" (D besar) dan versi v1.0.0
       - name: Generate Tetris Animation
-        # PERBAIKAN: 
-        # 1. Menggunakan 'Dion-g' (D kapital) yang benar
-        # 2. Menggunakan tag versi '@v1.0.0' yang stabil, bukan '@main'
         uses: Dion-g/readme-tetris@v1.0.0
         with:
-          # Path + nama file untuk menyimpan animasi SVG
+          # Tentukan di mana file SVG akan dibuat
           output: 'assets/tetris-animated.svg'
+
+      # Langkah 3: (INI BAGIAN PENTING YANG BARU)
+      # Commit dan Push file SVG yang baru dibuat ke repositori Anda
+      - name: Commit and Push generated SVG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # Pesan commit yang akan muncul di riwayat Git Anda
+          commit_message: 'feat: Update animated tetris game'
           
-          # (Opsional) Teks yang muncul saat game over
-          # game_over_text: 'GAME OVER'
+          # Beri tahu Aksi ini untuk HANYA meng-commit file ini
+          # Pastikan path ini SAMA PERSIS dengan 'output' di Langkah 2
+          file_pattern: 'assets/tetris-animated.svg'
+          
+          # Opsi tambahan untuk memastikan semuanya berjalan lancar
+          # Ini akan membuat folder 'assets' jika belum ada
+          commit_options: '--force --allow-empty'
+          
+          # Tambahkan semua file baru
+          add: 'assets/tetris-animated.svg'
