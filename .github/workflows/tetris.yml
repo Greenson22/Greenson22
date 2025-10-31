@@ -1,35 +1,36 @@
 # Nama Workflow
-name: Tetris
+name: Generate Animated Tetris
 
 # Kapan workflow ini dijalankan
 on:
-  # 1. (PENTING) Sesuai jadwal cron - setiap jam
-  # Ini yang membuat balok "jatuh" secara otomatis
+  # 1. Sesuai jadwal cron - setiap 6 jam
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */6 * * *'
     
-  # 2. (PENTING) Setiap kali ada "Issue" baru dibuka
-  # Ini adalah cara Anda "bermain" atau mengontrol balok
-  issues:
-    types: [opened]
+  # 2. (PENTING) Agar Anda bisa menjalankannya manual
+  # untuk pertama kali.
+  workflow_dispatch:
 
 jobs:
-  play-tetris:
-    # Selalu gunakan OS terbaru
+  build:
     runs-on: ubuntu-latest
     
     steps:
       # 1. Check out kode repositori Anda
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # 2. Menjalankan Aksi Git-Tetris
-      # Ini adalah "mesin" game-nya
-      - name: Run Tetris
-        uses: excalith/git-tetris@v1.1.0
+      # 2. Menjalankan Aksi "readme-tetris"
+      # Ini adalah "mesin" yang memainkan game dan membuat animasi
+      - name: Generate Tetris Animation
+        uses: vchime/readme-tetris@master
         with:
-          # Tentukan file README yang akan diperbarui
-          readme-path: 'README.md'
-          # Token rahasia GitHub agar Aksi ini bisa
-          # meng-commit perubahan ke README Anda
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # Path + nama file untuk menyimpan animasi SVG
+          # Kita akan menyimpannya di folder 'assets'
+          output: 'assets/tetris-animated.svg'
+          
+          # (Opsional) Teks yang muncul saat game over
+          # game_over_text: 'GAME OVER'
+          
+          # (Opsional) Jika Anda ingin mode 'dark'
+          # theme: 'dark'

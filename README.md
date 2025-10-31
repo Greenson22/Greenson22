@@ -97,18 +97,10 @@ Ini adalah tampilan aktivitas saya di GitHub.
 
 ---
 
-### 🎮 GitHub Tetris
+### 🎮 Animasi Tetris
 
-Mari bermain Tetris di profil saya! Game ini akan diperbarui setiap jam.
+Hanya untuk hiburan, berikut adalah permainan Tetris yang dimainkan otomatis oleh bot. Animasi ini diperbarui setiap 6 jam.
 
-**Cara Bermain:**
-1.  Buka [Tab Issues](https://github.com/Greenson22/Greenson22/issues) di repositori ini.
-2.  Buat **Issue Baru**.
-3.  Gunakan salah satu dari judul berikut untuk mengontrol balok:
-    * `move left` - Gerak ke kiri
-    * `move right` - Gerak ke kanan
-    * `rotate` - Putar balok
-    * `drop` - Jatuhkan balok
-4.  Kirim Issue tersebut. Papan di bawah ini akan diperbarui oleh GitHub Actions!
-
-Menunggu GitHub Actions untuk membangun papan Tetris...
+<p align="center">
+  <img src="assets/tetris-animated.svg" alt="Animasi Permainan Tetris" />
+</p>
