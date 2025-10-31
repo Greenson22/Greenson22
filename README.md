@@ -14,6 +14,7 @@
   <a href="https://www.facebook.com/frendy.rikal.gerung"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
   <a href="https://www.instagram.com/fr_gerung?igsh=MXNjYms4dWdnbXE2NA=="><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 </p>
+
 ---
 
 ### 🌱 Tentang Saya
@@ -90,8 +91,4 @@ Ini adalah tampilan aktivitas saya di GitHub.
 <p align="center">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Greenson22&show_icons=true&theme=tokyonight&icon_color=7957d5&rank_icon=github" alt="Statistik GitHub Frendy" />
   <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Greenson22&layout=compact&theme=tokyonight&langs_count=8" alt="Bahasa Teratas" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.vercel.app/api?user=Greenson22&theme=tokyonight" alt="GitHub Streak" />
 </p>
