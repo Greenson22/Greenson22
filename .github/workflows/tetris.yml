@@ -22,8 +22,10 @@ jobs:
 
       # 2. Menjalankan Aksi "readme-tetris" (VERSI YANG SUDAH DIPERBAIKI)
       - name: Generate Tetris Animation
-        # Menggunakan fork yang aktif dan terawat
-        uses: Dion-g/readme-tetris@main
+        # PERBAIKAN: 
+        # 1. Menggunakan 'Dion-g' (D kapital) yang benar
+        # 2. Menggunakan tag versi '@v1.0.0' yang stabil, bukan '@main'
+        uses: Dion-g/readme-tetris@v1.0.0
         with:
           # Path + nama file untuk menyimpan animasi SVG
           output: 'assets/tetris-animated.svg'
