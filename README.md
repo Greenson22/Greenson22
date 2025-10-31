@@ -9,10 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="mailto:[EMAIL_ANDA_DISINI]"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="[LINKEDIN_ANDA_DISINI]"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:frendegerung634@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/frendy-rikal-gerung-bb450b38a/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.facebook.com/frendy.rikal.gerung"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+  <a href="https://www.instagram.com/fr_gerung?igsh=MXNjYms4dWdnbXE2NA=="><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 </p>
-
 ---
 
 ### 🌱 Tentang Saya
@@ -92,15 +93,5 @@ Ini adalah tampilan aktivitas saya di GitHub.
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Greenson22&theme=tokyonight" alt="GitHub Streak" />
-</p>
-
----
-
-### 🎮 Animasi Tetris
-
-Hanya untuk hiburan, berikut adalah permainan Tetris yang dimainkan otomatis oleh bot. Animasi ini diperbarui setiap 6 jam.
-
-<p align="center">
-  <img src="assets/tetris-animated.svg" alt="Animasi Permainan Tetris" />
+  <img src="https://github-readme-streak-stats.vercel.app/api?user=Greenson22&theme=tokyonight" alt="GitHub Streak" />
 </p>
