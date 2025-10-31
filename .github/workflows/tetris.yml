@@ -1,0 +1,35 @@
+# Nama Workflow
+name: Tetris
+
+# Kapan workflow ini dijalankan
+on:
+  # 1. (PENTING) Sesuai jadwal cron - setiap jam
+  # Ini yang membuat balok "jatuh" secara otomatis
+  schedule:
+    - cron: '0 * * * *'
+    
+  # 2. (PENTING) Setiap kali ada "Issue" baru dibuka
+  # Ini adalah cara Anda "bermain" atau mengontrol balok
+  issues:
+    types: [opened]
+
+jobs:
+  play-tetris:
+    # Selalu gunakan OS terbaru
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Check out kode repositori Anda
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # 2. Menjalankan Aksi Git-Tetris
+      # Ini adalah "mesin" game-nya
+      - name: Run Tetris
+        uses: excalith/git-tetris@v1.1.0
+        with:
+          # Tentukan file README yang akan diperbarui
+          readme-path: 'README.md'
+          # Token rahasia GitHub agar Aksi ini bisa
+          # meng-commit perubahan ke README Anda
+          github-token: ${{ secrets.GITHUB_TOKEN }}
